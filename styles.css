@@ -74,15 +74,14 @@ body{
     align-items: center;
     gap: 10px;
     padding: 30px;
-    height: 70vh;
+    height: 80vh;
 }
 
 .form-text-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     height: 300px;
-    border: 1px solid white;
 }
 
 .main-text, .form-text-footer{
@@ -90,22 +89,85 @@ body{
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 70%;
+    padding-left: 30px;
+}
+
+.form-text-footer{
+    font-weight: bold;
 }
 
 .form-container{
-    height: 600px;
-    border: 1px solid white;
+    height: 500px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 3px 5px rgba(168, 50, 168);
+    padding-top: 10px;
+}
+
+.title{
+    font-size: 2rem;
+    color: palevioletred;
+    padding-left: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-div{
+    height: 100%;
+}
+
+.form-div form{
+    display: flex;
+    padding-left: 30px;
+    height: 100%;
+    width: 80%;
+}
+
+.form-first, .form-second{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-label{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.form-input input{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 10px;
+    border: 3px solid #880ba7;
+}
+
+.form-input input{
+    outline: none;
+}
+
+.form-input input:focus{
+    border: 2px solid palevioletred;
+}
+
+.error-message{
+    color: red;
+    display: none;
 }
 
 .button-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 300px;
-    border: 1px solid white;
     width: 100%;
     padding-left: 30px;
+    margin-top: 30px;
 }
 
 .button>button{
@@ -130,4 +192,10 @@ body{
     color: white;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.purple-text a{
+    font-weight: bold;
+    color: palevioletred;
+    text-decoration: none;
 }
